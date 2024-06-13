@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+@font-face {
+    font-family: 'font-coreana';
+    src: url(font/Hashiba.ttf);
+}
+
+:root {
+    --cor01: #011313;
+    --cor02: #044040;
+    --cor03: #048C8C;
+    --cor04: #2EF2DF;
+    --cor05: #F2F2F2;
+
+    --font-coreana: font-coreana, sans-serif;
+    --fonte-titulo: "Protest Revolution", sans-serif;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#fixo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    
+    
+}
+header{
+    text-align: center;
+    background-image: linear-gradient(to top, var(--cor03), var(--cor02));
+}
+nav{
+    background-color: #057476;
+    text-align: center;
+    padding: 10px;
+    margin-top: -35px;
+    border-bottom: 4px solid var(--cor04);
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: bolder;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition-duration: 1s;
+    border-radius: 5px 5px 0px 0px;
+    font-family: var(--fonte-titulo);
+    font-size: 1.2em;
+}
+nav > a:hover{
+    background-color: var(--cor04);
+    color: black;
+}
+main{
+    padding-top: 150px;
+    max-width: 800px;
+    min-width: 280px;
+    margin: auto;
+    background-color: white;
+}
+article > h1{
+    text-align: center;
+    padding-top: 20px;
+    color: var(--cor05);
+    font-size: 5em;
+}
+article > h2, p{
+    padding: 15px;
+    text-align: justify;
+    
+}
+article > h2{
+    font-size: 4em;
+    background-image: linear-gradient(to right, var(--cor04), transparent);
+    padding: 0px;
+    text-indent: 20px;
+    margin-top: 20px;
+}
+article > h3{
+    padding: 20px;
+    text-align: center;
+    
+    font-size: 3em;
+}
+article > p{
+    text-indent: 20px;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 25px;
+}
+article > h1, h2, h3{
+    font-family: var(--fonte-titulo);
+    color: rgb(0, 0, 0);
+}
+
+article img{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 3px solid var(--cor04);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
+}
+iframe{
+    width: 100%;
+    
+}
+#integrantes{
+    display: flex;
+    border-radius: 10px;
+    overflow: auto;
+    border: 5px solid var(--cor04);
+    margin-top: 30px;
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor04));
+}
+.cards > img{
+    border-radius: 110px;
+    width: 200px;
+}
+.cards{
+    background-color: #0A000D;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px groove var(--cor04);
+    background-image: linear-gradient(to top, var(--cor02), var(--cor01));
+    
+}
+.cards p{
+    padding: 5px;
+    color: aliceblue;
+}
+.cards > h3 {
+    font-weight: bolder;
+    color: var(--cor04);
+}
+.fontcustom{
+    font-weight: bold;
+    color: var(--cor04);
+}
+.social{
+    display: flex;
+    
+}
+.social img{
+    width: 30px;
+    border: none;
+    padding: 20px 10px 0px 10px;
+    margin: auto;
+    box-shadow: none;
+}
+footer{
+    background-color: var(--cor02);
+    margin-top: 30px;
+}
+footer p{
+    color: var(--cor04);
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
