@@ -57,6 +57,7 @@ section.imagem{
     background-image: url(imagens/background001.jpg);
     background-position: center center;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 section.imagem p{
