@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.imagem{
+    height: 600px;
+    background-color: brown;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.bloco{
+    height: 400px;
+    background-color: black;
+}
+
+#laranja{
+    background-color: #8D3329;
+}
+#verde{
+    background-color: #427300;
+}
+#amarelo{
+    background-color: #FDC300;
+}
+#vermelho{
+    background-color: #E00F08;
+}
+#azul{
+    background-color: #013D5E;
+}
+
+#imglaranja{
+    background-image: url(img/laranja.jpg);
+}
+#imgverde{
+    background-image: url(img/verde.jpg);
+}
+#imgamarelo{
+    background-image: url(img/amarelo.jpg);
+}
+#imgvermelho{
+    background-image: url(img/vermelho.jpg);
+}
+#imgazul{
+    background-image: url(img/azul.jpg);
+}
