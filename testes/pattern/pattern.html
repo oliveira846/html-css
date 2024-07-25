@@ -6,32 +6,38 @@
     <title>Pattern Teste</title>
     <style>
         body{
-            background-image: url(imgs/pattern4.jpg);
+            background-color: black;
+            color: aliceblue;
+            padding: 0px;
+            margin: 0px;
         }
-        .quadrado{
-            display: inline-block;
-            width: 300px;
-            height: 300px;
-            background-color: aqua;
-            border-radius: 5px;
-            border: 3px solid black;
-        }
-
-        #qdd1{
-            background-image: url(imgs/pattern1.jpg);
-        }
-        #qdd2{
+        #div2{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            background-color: aliceblue;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             background-image: url(imgs/pattern2.jpg);
         }
-        #qdd3{
-            background-image: url(imgs/pattern3.jpg);
+        #div1{
+            position: relative;
+            background-color: blueviolet;
+            width: 100%;
+            height: 100vh;
         }
-
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
-    <div class="quadrado" id="qdd1"></div>
-    <div class="quadrado" id="qdd2"></div>
-    <div class="quadrado" id="qdd3"></div>
+    <div id="div1">
+        <div id="div2">
+            <iframe src="../ghibli/ghibli/index.html" frameborder="0"></iframe>
+        </div>
+    </div>
 </body>
 </html>
