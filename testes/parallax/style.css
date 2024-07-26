@@ -46,8 +46,10 @@
     background-image: url(img/amarelo.jpg);
 }
 #imgvermelho{
-    background-image: url(img/vermelho.jpg);
+    background-image: url(img/vermelho.jfif);
+    background-position: bottom center;
 }
 #imgazul{
-    background-image: url(img/azul.jpg);
+    background-image: url(img/azul.png);
+    background-position: top center;
 }
