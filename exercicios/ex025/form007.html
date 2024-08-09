@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="iest">Estado: </label>
+            
+            <select name="estado" id="iest" required>
+                    <option value="" selected>---Escolha um estado---</option>
+                <optgroup label="Região Sudeste" style="color: blue;">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste" style="color: red;">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Professor</option>
+                <option>Jogador de Futebol</option>
+                <option>Programador</option>
+                <option>Dentista</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imen">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="40" rows="10" placeholder="Insira aqui a sua mensagem!" maxlength="100"></textarea>
+              
+        </p>
+        <p>
+            <input type="submit" value="Confirmar">
+            <input type="reset" value="Resetar">
+        </p>
+    </form>
+</body>
+</html>
