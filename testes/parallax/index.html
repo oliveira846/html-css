@@ -5,94 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praticas</title>
     <style>
-        *{
-            padding: 0px;
-            margin: 0px;
-        }
+        
         body{
             background-color: black;
             color: beige;
             font-family: Arial, Helvetica, sans-serif;
         }
-        ul{
-            columns: 2;
-            
-        }
-        li{
-            
-        }
-        ol{
-            margin-left: 40px;
-        }
-        div{
-            background-color: azure;
-            color: black;
-            font-weight: bolder;
-            
-            margin: 30px;
-            padding: 20px;
-        }
-        form{
-            
-        }
-        label{
-            
-        }
-        input{
-            margin-bottom: 20px;
-        }
-        fieldset{
-            padding: 20px;
-            border: 10px groove ;
-            margin-bottom: 20px;
-        }
-        legend{
-            background-color: rgb(189, 188, 188);
-            border: 2px solid gray;
-            padding: 5px;
-            
-        }
+        
     </style>
 </head>
 <body>
-    <div>
-        <form action="cadastro.php">
-            <fieldset>
-                <legend>Dados pessoais</legend>
-                <p>
-                    <label for="inome">Nome:  </label><input type="text" name="nome" id="inome">
-                <p></p>
-                <p>
-                    <label for="isobrenome">Sobrenome:  </label><input type="text" name="sobrenome" id="isobrenome">
-                </p>
-                <p>
-                    <label for="iemail">E-mail: </label><input type="email" name="email" id="iemail">
-                </p>
-                <p>
-                    <input type="radio" name="M" id="isexom" ><label for="isexom" style="margin-right: 20px;"> Masculino </label>
-                </p>
-                <p>
-                    <input type="radio" name="M" id="isexof"><label for="isexof"> Feminino </label>
-                </p>
-            </fieldset>
-            <fieldset>
-                <legend>Dados opcionais</legend>
-                <p>
-                    <input type="checkbox" name="fut" id="ifut">
-                    <label for="ifut">Futebol</label><br>
-                    <input type="checkbox" name="bas" id="ibas">
-                    <label for="ibas">Basquete</label><br>               
-                    <input type="checkbox" name="ten" id="iten">
-                    <label for="iten">Tênis</label><br> 
-                    <input type="checkbox" name="vol" id="ivol">
-                    <label for="ivol">Volei</label><br> 
-                </p>
-            </fieldset>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Dados pessoais</legend>
             <p>
-                <input type="reset" value="Resetar">
-                <input type="submit" value="Enviar">
+                <label for="inome">Nome: </label>
+                <input type="text" name="Nome" id="inome" required>
             </p>
-        </form>
-    </div>
+            <p>
+                <label for="isobrenome">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="isobrenome" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+            <p>
+                <label for="inasc">Data de nascimento: </label>
+                <input type="date" name="nasc" id="inasc" required>
+            </p>
+            <p>
+                <label for="iest">Local de nascimento: </label>
+                <select name="est" id="iest" required>
+                    <option value="">--- Escolha o seu estado ---</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </select>
+            </p>
+            <p> 
+                <input type="radio" name="sex" id="isexm" required>
+                <label for="isexm">Masculino</label><br>
+                <input type="radio" name="sex" id="isexf" required>
+                <label for="isexf">Feminino</label>
+                
+            </p>
+            <p>
+                <label for="iprof">Profissão: </label>
+                <input type="text" name="prof" id="iprof" list="lstprof" required>
+                <datalist id="lstprof">
+                    <option>Streamer</option>
+                    <option>Jogador de futebol</option>
+                    <option>Dentista</option>
+                    <option>Pintor</option>
+                    <option>personal Trainer</option>
+                </datalist>
+            </p>
+        </fieldset>
+        <p>
+            <label for="icor">Cor favorita: </label>
+            <input type="color" name="Cor" id="icor">
+        </p>
+        <p>
+            <label for="isat">Nivel de satisfação:</label>
+            <input type="range" name="sat" id="isat" min="0" max="10" oninput="valor.innerHTML  = Number(isat.value)" >
+            <output name="valor">0</output>
+        </p>
+        <p>
+            <label for="imsg">Deixe sua mensagem de satisfação do nosso trabalho:</label><br>
+            <textarea name="msg" id="imsg" cols="60" rows="20" placeholder="Digite sua mensagem..."></textarea>
+        </p>
+        <p>
+            <input type="reset" value="Resetar">
+            <input type="submit" value="Confirmar">
+        </p>
+    </form>
 </body>
 </html>
