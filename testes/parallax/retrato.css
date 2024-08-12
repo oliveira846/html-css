@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#imagem{
+    background-image: url(img/azul.png);
+    background-size: cover;
+    background-position: top center;
+}
+
+header h1{
+    color: aqua;
+}
+
+ul{
+    display: none;
+}
