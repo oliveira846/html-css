@@ -2,6 +2,70 @@
 
 /* Todas as demais media */
 
+/* 
+
+ Pequenas telas:  até 600px  
+ Celulares: minimo 600px
+ Tablet: minimo 768px
+ Desktop: minimo 992px
+ Grandes telas: minimo 1200px 
+
+*/
+
 @media print {
+    body{
+        background-image: url(../imagens/back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
+        
+        
+    }
+    main{
+        border: 5px solid black;
+    }
+    h1{
+        text-shadow: none;
+        color: black;
+    }
+
     
+    #phone{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+    #print{display: block;}
+    #tablet{display: none;}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+    #print{display: none;}
+    #tablet{display: block;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+    #print{display: none;}
+    #tablet{display: none;}
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+        
+    }
+    #phone{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
+    #print{display: none;}
+    #tablet{display: none;}
 }
