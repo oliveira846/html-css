@@ -4,31 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" media="all">
-    <link rel="stylesheet" href="retrato.css" media="screen and (orientation: portrait)">
-    <link rel="stylesheet" href="paisagem.css" media="screen and (orientation: landscape)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+        ul{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        nav{
+            background-color: rgb(2, 68, 68);
+            width: 90px;
+            text-align: center;
+            display: none;
+        }
+        
+        li{
+            border-top: 2px solid black;
+            padding: 10px;
+            
+        }
+        #logo{
+            text-align: center;
+            background-color: rgb(78, 99, 99);
+        }
+        #logo > h1{
+            font-size: 3em;
+        }
+        .material-symbols-outlined{
+            margin: 10px 10px 0px 10px;
+            
+        }
+        #burguer{
+            cursor: grabbing;
+        }
+        @media screen and ( orientation:landscape ){
+            ul{
+                display: inline-flex;
+
+            }
+            nav{
+                width: 100vw;
+                
+            }
+            #burguer{
+                display: none;
+            }
+            li{
+                border: none;
+            }
+            #itens{
+                display: block;
+            }
+        }
+    </style>
 </head>
-<body>
+<body>  
     <header>
         <div id="logo"><h1>M</h1></div>
-        <nav>
-            <ul>
-                <li>Esporte</li>
-                <li>Notícias</li>
-                <li>Emprego</li>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">
+            menu
+        </span>
+        <nav id="itens" >
+            
+            <ul >
+                <li><a href="https://youtube.com.br" target="_blank">Youtube</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Tiktok</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <aside id="imagem">
-            
-        </aside>
-        <article>
-            <h1>Teste</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla recusandae et est commodi repudiandae error at sunt ipsam officiis eaque facere corrupti, tempora dolor natus, nobis, omnis provident. Voluptatem, distinctio! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, velit! Voluptate sed enim dolore eligendi ut delectus assumenda expedita architecto asperiores id tempore quo soluta ipsam consequatur dolorum, cupiditate illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta sed ipsum nisi, ea tenetur suscipit reprehenderit repellendus. Blanditiis nemo ad consectetur, officiis cum repellat! Quidem expedita laboriosam neque vero suscipit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit fugiat quo neque unde quisquam iste. Commodi id nisi qui consectetur quasi labore, optio nobis, quod fuga magni ad reprehenderit ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae temporibus sapiente quibusdam quo dolor ad? A rem illum unde pariatur possimus enim nesciunt nihil tempora, ab rerum, sunt, ea sapiente?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id nemo eligendi soluta quae, officia in quis repellat odio numquam expedita est, architecto sed similique totam deleniti, nisi iure amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aut corrupti recusandae animi temporibus ullam magni commodi, minima eligendi perferendis. Maxime sapiente dolorum animi recusandae, libero quod expedita autem dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut fugit est rerum repellat eveniet soluta, in recusandae ratione rem quia excepturi at harum facilis quisquam reiciendis, illo tenetur iusto.</p>
-        </article>
-    </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+
+    </script>
 </body>
 </html>
