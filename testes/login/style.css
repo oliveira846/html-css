@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #2D2D33;
+    --cor2: #36374B;
+    --cor3: #414475;
+    --cor4: #3D44A0;
+    --cor5: #2933CC;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: var(--cor1);
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+#login{
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+#imagem{
+    width: 250px;
+    height: 250px;
+    background-color: var(--cor2);
+    
+    background-size: cover;
+}
+
+#form{
+  width: 250px;
+  background-color: var(--cor3);
+
+}
