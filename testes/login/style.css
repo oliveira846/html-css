@@ -43,7 +43,7 @@ main{
     background-color: var(--cor2);
     border-radius: 10px 10px 0px 0px;
     background-size: cover;
-    background-image: url(img/imagem.jpg);
+    background-image: url(img/imagem.png);
     background-position: center center;
 }
 
