@@ -10,16 +10,16 @@
     #login{
         display: flex;
         width: 600px;
-        height: 350px;
+        height: 300px;
         
     }
     #imagem{
-        height: 350px;
-        width: 400px;
+        height: 100%;
+        width: 50%;
         border-radius: 10px 0px 0px 10px;
     }
     #form{
-        
+        width: 50%;
     }
 }
 
