@@ -37,7 +37,7 @@ main{
     transform: translate(-50%, -50%);
     width: 280px;
     
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     box-shadow: 0px 0px 20px black;
     transition: width .3s, height .3s;
     transition-timing-function: ease;
@@ -76,7 +76,7 @@ h2, p{
     
  }
 .campo-confirmar{
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     color: aliceblue;
     width: 90%;
     height: 30px;
