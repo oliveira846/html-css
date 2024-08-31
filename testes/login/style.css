@@ -59,17 +59,17 @@ h2{
     text-align: center;
 }
 h2, p{
-    padding: 5px;
+    padding: 5px 20px;
 }
 .campo{
     width: 100%;
     text-align: center;
-    margin: 5px;
-    
+    margin: 5px 0px;
     border-radius: 2px;
 }
 .campo-login{
     height: 28px;
+    
  }
 .campo-confirmar{
     background-color: var(--cor3);
@@ -77,4 +77,11 @@ h2, p{
     width: 90%;
     height: 30px;
     
+}
+.botao{
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    display: block;
+    color: rgb(162, 155, 255);
 }
