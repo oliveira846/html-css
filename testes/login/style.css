@@ -16,7 +16,10 @@
 }
 
 body, html{
-    background-color: var(--cor1);
+    background-image: url(img/wallpaper-portrait.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
     width: 100vw;
     
 }
