@@ -29,7 +29,7 @@ main{
     position: relative;
     
 }
-#login{
+#login, #cadastro{
     border-radius: 10px;
     position: absolute;
     left: 50%;
@@ -58,6 +58,9 @@ main{
   color: aliceblue;
   text-align: center;
   padding-bottom: 10px;
+}
+#form a{
+    padding: 5px
 }
 h2{
     text-align: center;
@@ -88,4 +91,17 @@ h2, p{
     text-align: center;
     display: block;
     color: rgb(162, 155, 255);
+}
+
+
+/* --------------- Cadastro --------------- */
+
+#cadastro{
+    color: aliceblue;
+    width: 280px;
+    padding: 10px;
+}
+
+.campo-cadastro{
+    margin: 10px 0px;
 }
