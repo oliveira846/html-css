@@ -31,11 +31,14 @@
         border-right: 2px solid var(--color2);
         text-align: right;
     }
-    #korean-ver p{
-        
+    #korean-ver h2{
+        text-align: right;
     }
     #english-ver p{
         font-size: 1.1em;
+    }
+    #english-ver h2{
+        text-align: left;
     }
     #english-ver{
         text-align: left;
