@@ -12,11 +12,15 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     article{
-        width: 750px;
+        width: 800px;
         margin: auto;
     }
     #lyrics{
         display: inline-flex;
+        width: 95%;
+    }
+    article h1{
+        font-size: 6em;
     }
     #korean-ver, #english-ver{
         width: 50%;
@@ -25,10 +29,15 @@
     #korean-ver{
         border-left: none;
         border-right: 2px solid var(--color2);
+        font-size: 0.9em;
     }
     iframe{
-        height: 400px;
+        height: 500px;
     }
+    article{
+        text-align: center;
+    }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
