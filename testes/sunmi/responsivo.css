@@ -29,7 +29,16 @@
     #korean-ver{
         border-left: none;
         border-right: 2px solid var(--color2);
-        font-size: 0.9em;
+        text-align: right;
+    }
+    #korean-ver p{
+        
+    }
+    #english-ver p{
+        font-size: 1.1em;
+    }
+    #english-ver{
+        text-align: left;
     }
     iframe{
         height: 500px;
@@ -37,7 +46,11 @@
     article{
         text-align: center;
     }
-
+    #info{
+        width: 90%;
+        padding: 10px;
+        margin: auto;
+        margin-top: 20px;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

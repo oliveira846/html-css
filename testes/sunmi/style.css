@@ -32,6 +32,12 @@ body{
 iframe{
     width: 100%;
 }
+#info{
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 2px solid var(--color2);
+    background-color: var(--color5trans);
+}
 h1{
     font-size: 3.2em;
     font-family: var(--font-title);
