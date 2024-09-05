@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+        .container{
+            background-color: aqua;
+            display: flex;
+            flex-flow: row  ;
+            
+            margin: 5px;
+        }
+        .item{
+            background-color: blueviolet;
+            border: 1px solid black;
+            
+            text-align: center;
+        }
+        #flex1{
+            justify-content: space-around;    
+        }
+        #flex2{
+            justify-content: space-between;
+        }
+        #flex3{
+            justify-content: space-evenly;
+        }    
+    </style>
+</head>
+<body>
+    <div class="container" id="flex1">
+        <div class="item">Exemplo de flex A</div>
+        <div class="item">Exemplo de flex B</div>
+        <div class="item">Exemplo de flex C</div>
+        
+    </div>
+    <div class="container" id="flex2">
+        <div class="item">Exemplo de flex A</div>
+        <div class="item">Exemplo de flex B</div>
+        <div class="item">Exemplo de flex C</div>
+        
+    </div>
+    <div class="container" id="flex3">
+        <div class="item">Exemplo de flex A</div>
+        <div class="item">Exemplo de flex B</div>
+        <div class="item">Exemplo de flex C</div>
+        
+    </div>
+</body>
+</html>
