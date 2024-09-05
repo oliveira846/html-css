@@ -54,10 +54,20 @@
 @media only screen and (min-width: 992px) {
     body{
         background-image: url(img/background-landscape.png);
+        background-size: contain;
+    }
+    aside{
+        background-color: var(--color2);
+        width: 300px;
+        height: 500px;
+        
     }
     article{
         width: 800px;
         margin: auto;
+    }
+    main{
+        display: flex;
     }
     #lyrics{
         display: inline-flex;

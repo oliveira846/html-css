@@ -5,7 +5,7 @@
 
 :root{
     --color1: #fce7ff;
-    --color2: #a239b4;
+    --color2: #5c2faf;
     --color3: #7F428A;
     --color4: #4D1857;
     --color5: #2C0333;
@@ -29,6 +29,9 @@ body{
     color: var(--color1);
     box-sizing: border-box;
 }
+
+
+
 iframe{
     width: 100%;
 }
