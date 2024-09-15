@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOL</title>
+    <style>
+        @font-face {
+            font-family: 'vs';
+            src: url(font/Maximum\ Voltage.ttf);
+            }
+        @font-face {
+            font-family: 'main-font';
+            src: url(font/Geizer.otf);
+            }
+        @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: black;
+            background-image: url(img/background.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+        }
+        main{
+            width: 100vw;
+            height: 100vh;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            width: 1100px;
+            height: 600px;
+            
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .card{
+            width: 350px;
+            height: 100px;
+            background-image: linear-gradient(to right, black 40%, transparent);
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            img{
+                height: 100%;
+            }
+            
+        }
+        .card2{
+            width: 350px;
+            height: 100px;
+            background-image: linear-gradient(to left, black 40%, transparent);
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            flex-flow: row-reverse;
+            
+            img{
+                height: 100%;
+                
+            }
+            
+        }
+        h2{
+                color: aliceblue;
+                font-size: 2em;
+                font-family: 'main-font', Verdana, Geneva, Tahoma, sans-serif;
+                margin: 0px 10px;
+                font-weight: 100;
+            }
+            p{
+                color: aliceblue;
+                font-family: 'main-font', Verdana, Geneva, Tahoma, sans-serif;
+                margin: 0px 10px;
+                color: rgb(109, 163, 38);
+            }
+        h1{
+            font-size: 6em;
+            font-family: 'vs',"Allerta Stencil",Verdana, Geneva, Tahoma, sans-serif;
+            color: aliceblue;
+            -webkit-text-stroke: 1px black;
+
+        }
+        .text{
+            display: flex;
+            flex-flow: column;
+            
+        }
+        .text-2{
+            display: flex;
+            flex-flow: column;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="characters-1">
+                <div class="card" id="ally1">
+                    <img src="img/character1.svg" alt="personagem1">
+                    <div class="text">
+                        <h2>Dark Knight</h2>
+                        <p>The light killer</p>
+                    </div>
+                </div>
+                <div class="card" id="ally2">
+                    <img src="img/Amazon.svg" alt="personagem2">
+                    <div class="text">
+                        <h2>Amazon</h2>
+                        <p>The forest savior</p>
+                    </div>
+                </div>
+                <div class="card" id="ally3">
+                    <img src="img/ninja.svg" alt="personagem3">
+                    <div class="text">
+                        <h2>Shadow Wife</h2>
+                        <p>The true black widow</p>
+                    </div> 
+                </div>
+                <div class="card" id="ally4">
+                    <img src="img/mage.svg" alt="personagem4">
+                    <div class="text">
+                        <h2>Peace</h2>
+                        <p>The magic healer</p>
+                    </div>
+                </div>
+                <div class="card" id="ally5">
+                    <img src="img/werewolf.svg" alt="personagem1">
+                    <div class="text">
+                        <h2>Fury Fang</h2>
+                        <p>The fearless bite</p>
+                    </div>
+                </div>
+            </div>
+            <h1>VS</h1>
+            <div class="characters-2">
+                <div class="card2" id="enemy1">
+                    <img src="img/skull.svg" alt="personagem1">
+                    <div class="text-2">
+                        <h2>Nightmare</h2>
+                        <p>The dead in bones</p>
+                    </div>
+                </div>
+                <div class="card2" id="enemy2">
+                    <img src="img/tree.svg" alt="personagem1">
+                    <div class="text-2">
+                        <h2>Deadly Seed</h2>
+                        <p>The revenge of the earth</p>
+                    </div>
+                </div>
+                <div class="card2" id="enemy3">
+                    <img src="img/insect.svg" alt="personagem1">
+                    <div class="text-2">
+                        <h2>Venom</h2>
+                        <p>The mortal sting</p>
+                    </div>
+                </div>
+                <div class="card2" id="enemy4">
+                    <img src="img/priest.svg" alt="personagem1">
+                    <div class="text-2">
+                        <h2>Hope</h2>
+                        <p>The dangerous side of kind</p>
+                    </div>
+                </div>
+                <div class="card2" id="enemy5">
+                    <img src="img/marine.svg" alt="personagem1">
+                    <div class="text-2">
+                        <h2>Marine</h2>
+                        <p>The beauty of the seas</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </main>
+</body>
+</html>
