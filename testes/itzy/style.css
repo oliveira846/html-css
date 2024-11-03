@@ -41,15 +41,15 @@ header{
 #box{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 900px;
+    width: 1200px;
     margin: auto;
     gap: 10px;
     margin-top: 10px;
 }
 .box_section{
     color: aliceblue;
-    width: 200;
-    height: 250px;
+    width: 550px;
+    height: 350px;
     background-color: cornflowerblue;
     background-size: cover;
     border-radius: 10px;
@@ -90,8 +90,8 @@ a{
     text-decoration: none;
 }
 #lastest-song{
-    width: 900px;
-    height: 500px;
+    width: 1100px;
+    height: 618px;
     display: flex;
     margin: auto;
     
@@ -111,11 +111,12 @@ a{
     font-size: 2em;
 }
 footer{
-    background-color: white;
+    background-color: rgb(43, 24, 24);
     text-align: center;
     margin-top: 30px;
-    color: black;
+    color: rgb(255, 255, 255);
     p{
         padding: 2px;
+        font-size: 1.2em;
     }
 }
