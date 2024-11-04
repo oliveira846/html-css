@@ -25,7 +25,7 @@ header{
     justify-content: center;
     img{
         padding: 5px;
-        width: 280px;
+        width: 300px;
         margin-top: 20px;
     }
     i{
@@ -131,7 +131,7 @@ a{
     margin-top: 20px;
     font-size: 2em;
     background-color: #ea4e9c79;
-    color: white;
+    
     
 }
 footer{
