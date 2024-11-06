@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../img/background.png');
+    background-color: #fcf4eb;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+    font-family: "Emilys Candy", serif;
+}
+header{
+    text-align: center;
+    position: relative;
+    color: black;
+    display: flex;
+    justify-content: center;
+    img{
+        padding: 5px;
+        width: 300px;
+        margin-top: 20px;
+    }
+    i{
+        color: black;
+        font-size: 2.5em;
+        margin: 10px 10px;
+        border-bottom: 2px solid black;
+        transition: 0.4s;
+    }
+}
+i:hover{
+    border-bottom: 2px solid white;
+}
+
+#social-media{
+    
+    
+    background-color: #e977b0;
+    border-radius: 0px 0px 20px 0px;
+    
+}
+menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0%;
+   
+    flex-direction: column;
+    background-color: #e977b0;
+    border-radius: 0px 0px 20px 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.466);
+    i{
+        border-bottom: none;
+        cursor: pointer;
+    }
+    i:hover{
+        border-bottom: none;
+    }
+}
+.gradient{
+    background-image: linear-gradient(to top, transparent, transparent);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    h2{
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+}
+a{
+    text-decoration: none;
+}
+
+/* Main content */
+
+article{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+.card{
+    width: 80%;
+}
+.bar{
+    width: 100%;
+    height: 120px;
+    background-color: black; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 48%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.603);
+    cursor: pointer;
+}
+.content{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    transition: 2s;
+}
+.video{
+    grid-column: 2 / -1;
+}
+.txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.747);
+    color: white;
+    h2{
+        font-size: 2em;
+    }
+}
+.track{
+    padding: 20px;
+    li{
+        list-style-position: inside;
+    }
+    h2{
+        margin-bottom: 10px;
+    }
+}
+
+
+#album1{
+    background-image: url(img/itz-dif.jpg);
+}
+#album2{
+    background-image: url(img/icy-album2.jpg);
+    background-position: center 48%;
+}
+#album3{
+    background-image: url(img/itzme-album3.jpg);
+    background-position: center 43%;
+}
+#album4{
+    background-image: url(img/notshy-album4.jpg);
+    background-position: center 40%;
+}
+#album5{
+    background-image: url(img/notshy-album5.jpg);
+    background-position: center 27%;
+}
+#album6{
+    background-image: url(img/midzy.jpg);
+    background-position: center 50%;
+}
+#album7{
+    background-image: url(img/guesswho.jpg);
+    background-position: center 50%;
+}
+#album8{
+    background-image: url(img/mafiaenglishver.jpg);
+    background-position: center 50%;
+}
+#album9{
+    background-image: url(img/crazyinlove.jpg);
+    background-position: center 22%;
+}
+#album10{
+    background-image: url(img/CHECKMATE.jpg);
+    background-position: center 85%;
+}
+#album11{
+    background-image: url(img/BOYSLIKE.png);
+    background-position: center 50%;
+}
+#album12{
+    background-image: url(img/cheshire.jpg);
+    background-position: center 50%;
+}
+#album13{
+    background-image: url(img/cake.jpg);
+    background-position: center 33%;
+}
+#album14{
+    background-image: url(img/borntobe.jpg);
+    background-position: center 90%;
+}
+#album15{
+    background-image: url(img/gold.jpg);
+    background-position: center 50%;
+}
+/* Footer content */
+footer{
+    background-color: black;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    p{
+        padding: 2px;
+    }
+}
